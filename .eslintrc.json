@@ -1,0 +1,21 @@
+{
+  "extends": ["plugin:prettier/recommended", "plugin:react/recommended"],
+  "parser": "babel-eslint",
+  "plugins": ["prettier"],
+  "rules": {
+    "camelcase": "error",
+    "consistent-return": "warn",
+    "curly": "error",
+    "default-case": "warn",
+    "default-param-last": "error",
+    "dot-notation": "warn",
+    "eqeqeq": "warn",
+    "indent": "off",
+    "no-else-return": "warn",
+    "no-empty": "error",
+    "no-extra-parens": "warn",
+    "no-func-assign": "error",
+    "no-unused-vars": "error",
+    "prettier/prettier": "error"
+  }
+}
