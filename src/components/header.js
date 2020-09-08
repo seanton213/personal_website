@@ -1,45 +1,44 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
+import styled from 'styled-components';
 
-const Header = ({ siteTitle }) => ( <
-    header style = {
-        {
-            background: `#00eaff`,
-            marginBottom: `1.45rem`,
-        }
-    } >
-    <
-    div style = {
-        {
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `1.45rem 1.0875rem`,
-        }
-    } >
-    <
-    h1 style = {
-        { margin: 0 } } >
-    <
-    Link to = "/"
-    style = {
-        {
-            color: `white`,
-            textDecoration: `none`,
-        }
-    } >
-    { siteTitle } { ' ' } <
-    /Link>{' '} <
-    /h1>{' '} <
-    /div>{' '} <
-    /header>
-);
+const HeaderComponent = styled.header`
+  background: #ffffff;
+  margin-bottom: 1.45rem;
+`;
+
+const InnerDiv = styled.div`
+  max-width: 960;
+  padding: 1.45rem 1.0875rem;
+`;
+
+const HeaderText = styled.h1`
+  margin: 0;
+`;
+
+const StyledLink = styled(props => <Link {...props} />)`
+  color: black;
+  text-decoration: none;
+`;
+
+function Header({ siteTitle }) {
+  return (
+    <HeaderComponent>
+      <InnerDiv>
+        <HeaderText>
+          <StyledLink to="/">{siteTitle}</StyledLink>
+        </HeaderText>
+      </InnerDiv>
+    </HeaderComponent>
+  );
+}
 Header.propTypes = {
-    siteTitle: PropTypes.string,
+  siteTitle: PropTypes.string,
 };
 
 Header.defaultProps = {
-    siteTitle: ``,
+  siteTitle: ``,
 };
 
 export default Header;
