@@ -17,7 +17,7 @@ const HeaderText = styled.h1`
   margin: 0;
 `;
 
-const StyledLink = styled(props => <Link {...props} />)`
+const StyledLink = styled((props) => <Link {...props} />)`
   color: black;
   text-decoration: none;
 `;
