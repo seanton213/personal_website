@@ -4,7 +4,7 @@ import Contacts from './Contacts';
 import PropTypes from 'prop-types';
 
 const FooterComponent = styled.footer`
-  background: #eeeeee;
+  background-color: #eeeeee;
   display: flex;
   width: 100%;
   align-items: baseline;
@@ -13,7 +13,7 @@ const FooterComponent = styled.footer`
   @media screen and (max-width: 448px) {
     flex-direction: column;
     align-items: center;
-    background: #eeeeee;
+    background-color: #eeeeee;
   }
 `;
 

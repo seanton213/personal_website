@@ -14,7 +14,7 @@ const StyledUl = styled.ul`
   margin: 5px;
 
   @media screen and (max-width: 448px) {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 `;
 
