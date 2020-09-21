@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Contacts from './Contacts';
 import PropTypes from 'prop-types';
 
-const FooterComponent = styled.footer`
+const FooterDiv = styled.div`
   background-color: #eeeeee;
   display: flex;
   width: 100%;
@@ -25,10 +25,12 @@ const FooterText = styled.p`
 
 function Footer({ contacts }) {
   return (
-    <FooterComponent>
-      <FooterText>© {new Date().getFullYear()} Sean Olson Luna</FooterText>
-      <Contacts contacts={contacts} />
-    </FooterComponent>
+    <footer>
+      <FooterDiv>
+        <FooterText>© {new Date().getFullYear()} Sean Olson Luna</FooterText>
+        <Contacts contacts={contacts} />
+      </FooterDiv>
+    </footer>
   );
 }
 
