@@ -6,15 +6,22 @@ import styled from 'styled-components';
 const HeaderComponent = styled.header`
   background: #ffffff;
   margin-bottom: 1.45rem;
+  border-bottom-color: #949494;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
 `;
 
 const InnerDiv = styled.div`
   max-width: 960;
-  padding: 1.45rem 1.0875rem;
+  padding: 0.75rem 1.0875rem;
 `;
 
 const HeaderText = styled.h1`
   margin: 0;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  letter-spacing: 4px;
 `;
 
 const StyledLink = styled((props) => <Link {...props} />)`

@@ -3,6 +3,12 @@ module.exports = {
         title: `Sean Olson Luna`,
         description: `Personal Website`,
         author: `Sean Olson Luna`,
+        contacts: {
+            email: 'seanton213@gmail.com',
+            facebook: 'seanton213',
+            github: 'seanton213',
+            linkedin: 'sean-olson'
+          }
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
