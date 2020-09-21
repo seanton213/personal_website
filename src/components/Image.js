@@ -16,8 +16,10 @@ import styled from 'styled-components';
 
 const StyledImg = styled(Img)`
   margin: 32px;
-  height: 300px;
-  width: 300px;
+  max-height: 250px;
+  max-width: 250px;
+  height: 100%;
+  width: 100%;
   border-radius: 50%;
   border-style: solid;
   border-width: 1px;

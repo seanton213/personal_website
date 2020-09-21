@@ -2,9 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const AboutContainer = styled.div`
-  margin-top: 16px;
-  margin-left: 100px;
+  margin: 16px 100px;
   width: 75%;
+
+  @media screen and (max-width: 600px) {
+    margin: 16px 50px;
+    width: 75%;
+  }
 `;
 
 const Title = styled.h2`

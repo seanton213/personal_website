@@ -8,7 +8,7 @@ const StyledUl = styled.ul`
   display: flex;
   flex-flow: row wrap;
   flex-grow: 0;
-  flex-shrink: 0;
+  flex-shrink: 2;
   list-style: none;
   padding: 0;
   margin: 5px;

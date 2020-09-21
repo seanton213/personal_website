@@ -4,19 +4,22 @@ import Contacts from './Contacts';
 import PropTypes from 'prop-types';
 
 const FooterComponent = styled.footer`
-  position: absolute;
-  left: 0;
-  bottom: 0;
   background: #eeeeee;
   display: flex;
   width: 100%;
   align-items: baseline;
   justify-content: space-between;
+
+  @media screen and (max-width: 448px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const FooterText = styled.p`
   font-color: #949494;
   margin: 5px;
+  flex-shrink: 0;
 `;
 
 function Footer({ contacts }) {

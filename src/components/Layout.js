@@ -14,10 +14,17 @@ import Footer from './Footer';
 import './Layout.css';
 import styled from 'styled-components';
 
-const LayoutContainer = styled.div`
+const OuterLayoutContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`;
+
+const InnerLayoutContainer = styled.div`
   margin: 0 auto;
   padding: 0 1.0875rem 1.45rem;
   max-width: 1000px;
+  flex: 1 0 auto;
 `;
 
 const Layout = ({ children }) => {
@@ -39,13 +46,13 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <>
+    <OuterLayoutContainer>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <LayoutContainer>
+      <InnerLayoutContainer>
         <main> {children} </main>
-      </LayoutContainer>
+      </InnerLayoutContainer>
       <Footer contacts={data.site.siteMetadata.contacts} />
-    </>
+    </OuterLayoutContainer>
   );
 };
 
