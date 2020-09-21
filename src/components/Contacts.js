@@ -12,6 +12,10 @@ const StyledUl = styled.ul`
   list-style: none;
   padding: 0;
   margin: 5px;
+
+  @media screen and (max-width: 448px) {
+    margin-bottom: 10px;
+  }
 `;
 
 const StyledLi = styled.li`

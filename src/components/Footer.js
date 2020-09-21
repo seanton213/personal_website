@@ -13,6 +13,7 @@ const FooterComponent = styled.footer`
   @media screen and (max-width: 448px) {
     flex-direction: column;
     align-items: center;
+    background: #eeeeee;
   }
 `;
 
