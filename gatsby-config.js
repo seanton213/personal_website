@@ -7,7 +7,8 @@ module.exports = {
             email: 'seanton213@gmail.com',
             facebook: 'seanton213',
             github: 'seanton213',
-            linkedin: 'sean-olson'
+            linkedin: 'sean-olson',
+            bitbucket: 'seanton213'
           }
     },
     plugins: [

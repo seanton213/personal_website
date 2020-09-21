@@ -16,6 +16,9 @@ const getIcon = (name) => {
     case 'facebook':
       icon = ICONS.FACEBOOK;
       break;
+    case 'bitbucket':
+      icon = ICONS.BITBUCKET;
+      break;
     default:
       icon = {};
       break;

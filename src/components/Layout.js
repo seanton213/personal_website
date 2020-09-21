@@ -30,6 +30,7 @@ const Layout = ({ children }) => {
             facebook
             linkedin
             github
+            bitbucket
             email
           }
         }

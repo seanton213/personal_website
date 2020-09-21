@@ -14,6 +14,9 @@ const getContactHref = (name, contact) => {
     case 'facebook':
       href = `https://www.facebook.com/${contact}`;
       break;
+    case 'bitbucket':
+      href = `https://bitbucket.org/${contact}`;
+      break;
     default:
       href = contact;
       break;
