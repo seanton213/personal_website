@@ -14,9 +14,11 @@ const HeaderComponent = styled.header`
 const InnerDiv = styled.div`
   max-width: 960;
   padding: 0.75rem 1.0875rem;
+  display: flex;
+  justify-content: space-between;
 `;
 
-const HeaderText = styled.h1`
+const StyledLetters = styled.h1`
   margin: 0;
   font-family: 'Karla', sans-serif;
   font-weight: 500;
@@ -33,9 +35,12 @@ function Header({ siteTitle }) {
   return (
     <HeaderComponent>
       <InnerDiv>
-        <HeaderText>
+        <StyledLetters>
           <StyledLink to="/">{siteTitle}</StyledLink>
-        </HeaderText>
+        </StyledLetters>
+        <StyledLetters>
+          <StyledLink to="/blog">Blog</StyledLink>
+        </StyledLetters>
       </InnerDiv>
     </HeaderComponent>
   );
