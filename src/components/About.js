@@ -37,8 +37,8 @@ function About() {
         page.
       </Paragraph>
       <ParagraphBold>
-        Java, Spring Boot, Javascript, React/Redux, Postgres, Python, Kubernetes, Drools, Elastic
-        Search, Kafka
+        Java, Spring Boot, JPA/Hibernate, Javascript, React/Redux, Postgres, Python, Kubernetes,
+        Terraform, Drools, Elastic Search, Kafka
       </ParagraphBold>
     </AboutContainer>
   );

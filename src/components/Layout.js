@@ -34,10 +34,10 @@ const Layout = ({ children }) => {
         siteMetadata {
           title
           contacts {
-            facebook
+            # facebook
             linkedin
             github
-            bitbucket
+            # bitbucket
             email
           }
         }
