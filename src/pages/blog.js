@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from '../components/Layout';
 import { graphql, Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
@@ -27,7 +26,7 @@ function Blog({ data }) {
   const { edges } = data.allMarkdownRemark;
 
   return (
-    <Layout>
+    <>
       <OuterContainer>
         <h1>Blog</h1>
 
@@ -47,7 +46,7 @@ function Blog({ data }) {
           );
         })}
       </OuterContainer>
-    </Layout>
+    </>
   );
 }
 

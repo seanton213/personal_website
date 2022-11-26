@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import Layout from '../components/Layout';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
@@ -33,7 +32,7 @@ function Template({ data }) {
   const html = data.markdownRemark.html;
 
   return (
-    <Layout>
+    <>
       <OuterContainer>
         <BlogPostContent>
           <h1>{title}</h1>
@@ -42,7 +41,7 @@ function Template({ data }) {
         </BlogPostContent>
         <StyledLink to="/blog">Back to Blog</StyledLink>
       </OuterContainer>
-    </Layout>
+    </>
   );
 }
 
