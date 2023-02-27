@@ -8,6 +8,7 @@
         "babel-plugin-styled-components": "2.0.7",
         "gatsby": "^5.2.0",
         "gatsby-image": "3.11.0",
+        "gatsby-plugin-fix-fouc": "^1.0.2",
         "gatsby-plugin-intl": "0.3.3",
         "gatsby-plugin-manifest": "^5.2.0",
         "gatsby-plugin-minify": "0.5.0",
@@ -60,7 +61,7 @@
     "bugs": {
         "url": "https://github.com/gatsbyjs/gatsby/issues"
     },
-    "engines" : { 
-        "node" : ">=18.0.0" 
+    "engines": {
+        "node": ">=18.0.0"
     }
 }

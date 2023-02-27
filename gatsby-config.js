@@ -47,6 +47,7 @@ module.exports = {
         // `gatsby-plugin-offline`,
         `gatsby-plugin-minify`,
         `gatsby-plugin-styled-components`,
+        `gatsby-plugin-fix-fouc`
         // {
         //     resolve: `gatsby-plugin-intl`,
         //     options: {
