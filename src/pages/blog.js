@@ -6,10 +6,14 @@ import styled from 'styled-components';
 const OuterContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   font-family: 'Raleway', sans-serif;
   background: #eeeeee;
   padding: 24px;
+`;
+
+const Header = styled.h1`
+  align-self: center;
 `;
 
 const StyledLink = styled((props) => <Link {...props} />)`
@@ -28,7 +32,7 @@ function Blog({ data }) {
   return (
     <>
       <OuterContainer>
-        <h1>Blog</h1>
+        <Header>Blog</Header>
 
         {edges.map((edge) => {
           const { frontmatter } = edge.node;
