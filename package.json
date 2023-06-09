@@ -6,7 +6,7 @@
     "author": "Sean Olson Luna <seanton213@gmail.com>",
     "dependencies": {
         "babel-plugin-styled-components": "2.0.7",
-        "gatsby": "^5.2.0",
+        "gatsby": "^5.9.1",
         "gatsby-image": "3.11.0",
         "gatsby-plugin-fix-fouc": "^1.0.2",
         "gatsby-plugin-intl": "0.3.3",
